@@ -1,0 +1,42 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# SHIELDING
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/linac/daughters/name                shielding
+/gate/linac/daughters/insert              cylinder
+/gate/shielding/setMaterial               Air
+/gate/shielding/geometry/setRmin          0 cm  
+/gate/shielding/geometry/setRmax          30.0000 cm
+/gate/shielding/geometry/setHeight        16.4170 cm	 
+/gate/shielding/placement/setTranslation  0.0 0.0 -30.7895 cm
+/gate/shielding/vis/setVisible            1
+
+	/gate/shielding/daughters/name                     shielding_outside
+	/gate/shielding/daughters/insert                   cylinder
+	/gate/shielding_outside/setMaterial                Lead
+	/gate/shielding_outside/geometry/setRmin           0.0 cm
+	/gate/shielding_outside/geometry/setRmax           30.0 cm
+	/gate/shielding_outside/geometry/setHeight         15.417 cm
+	/gate/shielding_outside/placement/setTranslation   0.0 0.0 0.5 cm
+	/gate/shielding_outside/vis/setColor               gray 
+	#/gate/shielding_outside/vis/forceSolid
+
+		/gate/shielding_outside/daughters/name     shielding_inside
+		/gate/shielding_outside/daughters/insert   cylinder
+		/gate/shielding_inside/setMaterial         Air
+		/gate/shielding_inside/geometry/setRmin    0.0 cm
+		/gate/shielding_inside/geometry/setRmax    29.0 cm
+		/gate/shielding_inside/geometry/setHeight  15.417 cm
+		/gate/shielding_inside/vis/forceSolid
+
+	/gate/shielding/daughters/name                     shielding_bottom
+	/gate/shielding/daughters/insert                   cylinder
+	/gate/shielding_bottom/setMaterial                 Lead
+	/gate/shielding_bottom/geometry/setRmin            10.0 cm
+	/gate/shielding_bottom/geometry/setRmax            30.0 cm
+	/gate/shielding_bottom/geometry/setHeight          1.0 cm
+	/gate/shielding_bottom/placement/setTranslation    0.0 0.0 -7.7085 cm
+	/gate/shielding_bottom/vis/setColor                white
+	/gate/shielding_bottom/vis/forceSolid
+
+	

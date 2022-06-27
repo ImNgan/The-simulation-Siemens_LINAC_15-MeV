@@ -1,0 +1,16 @@
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# MIRROR ASSEMBLY
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/linac/daughters/name              mirror
+/gate/linac/daughters/insert            box
+/gate/mirror/setMaterial                Glass
+/gate/mirror/geometry/setXLength        10 cm
+/gate/mirror/geometry/setYLength        0.3887399919 cm
+/gate/mirror/geometry/setZLength        10.55888252 cm
+/gate/mirror/placement/setTranslation   0.0 0.0 -19.103 cm #-21.603 + (21.603-16.603)/2
+/gate/mirror/placement/setRotationAxis  1 0 0
+/gate/mirror/placement/setRotationAngle 118.264 deg #(28.264 + 90)
+/gate/mirror/vis/setColor               blue
+/gate/mirror/vis/forceSolid

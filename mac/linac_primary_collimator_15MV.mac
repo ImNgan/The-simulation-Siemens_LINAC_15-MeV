@@ -1,0 +1,63 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# PRIMARY COLLIMATOR 15MV
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/gate/ab_pri_ff/daughters/name                   pri_colli_layer1
+/gate/ab_pri_ff/daughters/insert                 cylinder
+/gate/pri_colli_layer1/setMaterial               Tungsten
+/gate/pri_colli_layer1/geometry/setRmin          1.9 cm
+/gate/pri_colli_layer1/geometry/setRmax          2.77622 cm
+/gate/pri_colli_layer1/geometry/setHeight        1.2 cm
+/gate/pri_colli_layer1/placement/setTranslation  0.0 0.0 3.36215 cm
+/gate/pri_colli_layer1/vis/setColor              yellow
+#/gate/pri_colli_layer1/vis/forceSolid
+		
+/gate/ab_pri_ff/daughters/name                   pri_colli_layer2
+/gate/ab_pri_ff/daughters/insert                 cylinder
+/gate/pri_colli_layer2/setMaterial               Tungsten
+/gate/pri_colli_layer2/geometry/setRmin          1.1 cm
+/gate/pri_colli_layer2/geometry/setRmax          2.77622 cm
+/gate/pri_colli_layer2/geometry/setHeight        1.2 cm
+/gate/pri_colli_layer2/placement/setTranslation  0.0 0.0 2.16215 cm
+/gate/pri_colli_layer2/vis/setColor              yellow
+#/gate/pri_colli_layer2/vis/forceSolid
+
+/gate/ab_pri_ff/daughters/name                   pri_colli_layer3
+/gate/ab_pri_ff/daughters/insert                 cylinder
+/gate/pri_colli_layer3/setMaterial               Tungsten
+/gate/pri_colli_layer3/geometry/setRmin          1.4 cm
+/gate/pri_colli_layer3/geometry/setRmax          2.77622 cm
+/gate/pri_colli_layer3/geometry/setHeight        1.1 cm
+/gate/pri_colli_layer3/placement/setTranslation  0.0 0.0 1.01215 cm
+/gate/pri_colli_layer3/vis/setColor              yellow
+#/gate/pri_colli_layer3/vis/forceSolid
+
+/gate/ab_pri_ff/daughters/name                   pri_colli_layer4
+/gate/ab_pri_ff/daughters/insert                 cylinder
+/gate/pri_colli_layer4/setMaterial               Tungsten
+/gate/pri_colli_layer4/geometry/setRmin          1.9 cm
+/gate/pri_colli_layer4/geometry/setRmax          2.77622 cm
+/gate/pri_colli_layer4/geometry/setHeight        1.3 cm
+/gate/pri_colli_layer4/placement/setTranslation  0.0 0.0 -0.18785 cm
+/gate/pri_colli_layer4/vis/setColor              yellow
+#/gate/pri_colli_layer4/vis/forceSolid
+
+/gate/ab_pri_ff/daughters/name                   pri_colli_layer5
+/gate/ab_pri_ff/daughters/insert                 cylinder
+/gate/pri_colli_layer5/setMaterial               Tungsten
+/gate/pri_colli_layer5/geometry/setRmin          2.1 cm
+/gate/pri_colli_layer5/geometry/setRmax          2.77622 cm
+/gate/pri_colli_layer5/geometry/setHeight        1.4 cm
+/gate/pri_colli_layer5/placement/setTranslation  0.0 0.0 -1.53785 cm
+/gate/pri_colli_layer5/vis/setColor              yellow
+#/gate/pri_colli_layer5/vis/forceSolid
+
+/gate/ab_pri_ff/daughters/name                   pri_colli_layer6
+/gate/ab_pri_ff/daughters/insert                 cylinder
+/gate/pri_colli_layer6/setMaterial               Tungsten
+/gate/pri_colli_layer6/geometry/setRmin          2.5 cm
+/gate/pri_colli_layer6/geometry/setRmax          2.77622 cm
+/gate/pri_colli_layer6/geometry/setHeight        1.40680 cm
+/gate/pri_colli_layer6/placement/setTranslation  0.0 0.0 -2.94125 cm
+/gate/pri_colli_layer6/vis/setColor              yellow
+#/gate/pri_colli_layer6/vis/forceSolid
+

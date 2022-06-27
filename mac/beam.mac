@@ -1,0 +1,21 @@
+#=====================================================
+# BEAMS 
+#=====================================================
+
+/gate/source/addSource mybeam gps
+/gate/source/mybeam/gps/particle e-
+
+/gate/source/mybeam/gps/energytype Mono
+/gate/source/mybeam/gps/energy 15 MeV
+
+/gate/source/mybeam/gps/angtype beam2d
+
+/gate/source/mybeam/gps/type Plane
+/gate/source/mybeam/gps/shape Circle
+/gate/source/mybeam/gps/radius 0.15 cm
+
+/gate/source/mybeam/gps/centre  0 0 0.45 cm
+/gate/source/mybeam/gps/direction     0 0 -1
+
+
+

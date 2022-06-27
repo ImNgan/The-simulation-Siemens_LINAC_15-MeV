@@ -1,0 +1,99 @@
+
+#=====================================================
+# VERBOSITY
+#=====================================================
+
+/control/execute mac/verbose.mac
+
+#=====================================================
+# VISUALISATION
+#=====================================================
+
+#/control/execute mac/visu.mac
+
+# =====================================================
+# GEOMETRY
+# =====================================================
+
+/gate/geometry/setMaterialDatabase   data/LinacMaterials.db
+
+# -----------------------------------------------------
+# WORLD
+# -----------------------------------------------------
+
+/gate/world/setMaterial            Air
+/gate/world/geometry/setXLength    1 m
+/gate/world/geometry/setYLength    1 m
+/gate/world/geometry/setZLength    3 m
+
+# -----------------------------------------------------
+# LINAC HEAD
+# -----------------------------------------------------
+
+/control/execute                     mac/linac_head.mac
+
+# -----------------------------------------------------
+# VIRTUAL PLANE FOR PHASE SPACE
+# -----------------------------------------------------
+
+/gate/linac/daughters/name                PhS_Plane
+/gate/linac/daughters/insert              cylinder
+/gate/PhS_Plane/setMaterial              Vacuum
+/gate/PhS_Plane/geometry/setRmin         0 cm
+/gate/PhS_Plane/geometry/setRmax         10 cm
+/gate/PhS_Plane/geometry/setHeight       1 nm
+/gate/PhS_Plane/placement/setTranslation 0.0 0.0 -22 cm
+
+# =====================================================
+# PHYSICS:
+# =====================================================
+
+/gate/physics/addPhysicsList QGSP_BERT_HP
+
+/gate/physics/Gamma/SetCutInRegion      world 1 mm
+/gate/physics/Electron/SetCutInRegion   world 1 mm
+/gate/physics/Positron/SetCutInRegion   world 1 mm
+
+#=====================================================
+# DETECTORS:
+#=====================================================
+
+# ----------------------------------------------------
+# the following actor regularly store the current number of event/track/step in a file
+# ----------------------------------------------------
+
+/gate/actor/addActor               SimulationStatisticActor stat
+/gate/actor/stat/save              output/output-PhS.txt
+/gate/actor/stat/saveEveryNSeconds 20
+
+# ----------------------------------------------------
+# Phase space storage (a PhS for all particles)
+# ----------------------------------------------------
+
+/gate/actor/addActor                                 PhaseSpaceActor PhS_Plane
+/gate/actor/PhS_Plane/attachTo                       PhS_Plane             
+/gate/actor/PhS_Plane/save 	                     output/PhS_15.root
+/gate/actor/PhS_Plane/useVolumeFrame                 true
+
+
+# INITIALISATION
+#=====================================================
+
+/gate/run/initialize
+
+#=====================================================
+# BEAMS
+#=====================================================
+
+/control/execute mac/beam.mac
+
+#=====================================================
+# START BEAMS
+#=====================================================
+
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+
+/gate/application/noGlobalOutput
+/gate/application/setTotalNumberOfPrimaries 50E+06
+/gate/application/start

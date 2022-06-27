@@ -1,0 +1,44 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# VACUUM ENVELOPE ASSEMBLY
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/linac/daughters/name               envelope
+/gate/linac/daughters/insert             cylinder
+/gate/envelope/setMaterial               Air
+/gate/envelope/geometry/setRmin          0 cm
+/gate/envelope/geometry/setRmax          1.5 cm
+/gate/envelope/geometry/setHeight        0.076 cm
+/gate/envelope/placement/setTranslation  0.0 0.0 0.386 cm
+#/gate/envelope/vis/setVisible            0
+
+	/gate/envelope/daughters/name                    envelope_layer1
+	/gate/envelope/daughters/insert                  cylinder
+	/gate/envelope_layer1/setMaterial                Titanium
+	/gate/envelope_layer1/geometry/setRmin           0 cm
+	/gate/envelope_layer1/geometry/setRmax           1.5 cm
+	/gate/envelope_layer1/geometry/setHeight         0.005 cm
+	/gate/envelope_layer1/placement/setTranslation   0.0 0.0 0.0355 cm
+	/gate/envelope_layer1/vis/setColor               blue
+	#/gate/envelope_layer1/vis/forceSolid
+
+	/gate/envelope/daughters/name                    envelope_layer2
+	/gate/envelope/daughters/insert                  cylinder
+	/gate/envelope_layer2/setMaterial                Water
+	/gate/envelope_layer2/geometry/setRmin           0 cm
+	/gate/envelope_layer2/geometry/setRmax           1.5 cm
+	/gate/envelope_layer2/geometry/setHeight         0.066 cm
+	/gate/envelope_layer2/placement/setTranslation   0.0 0.0 0.0 cm
+	/gate/envelope_layer2/vis/setColor               blue
+	#/gate/envelope_layer2/vis/forceSolid
+
+	/gate/envelope/daughters/name                    envelope_layer3
+	/gate/envelope/daughters/insert                  cylinder
+	/gate/envelope_layer3/setMaterial                Titanium
+	/gate/envelope_layer3/geometry/setRmin           0 cm
+	/gate/envelope_layer3/geometry/setRmax           1.5 cm
+	/gate/envelope_layer3/geometry/setHeight         0.005 cm
+	/gate/envelope_layer3/placement/setTranslation   0.0 0.0 -0.0355 cm
+	/gate/envelope_layer3/vis/setColor               blue
+	#/gate/envelope_layer3/vis/forceSolid
+	
+	

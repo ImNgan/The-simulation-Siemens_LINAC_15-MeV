@@ -1,0 +1,35 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ABSORBER 15MV
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/ab_pri_ff/daughters/name                  absorber_layer1
+/gate/ab_pri_ff/daughters/insert                cylinder
+/gate/absorber_layer1/setMaterial               Aluminium
+/gate/absorber_layer1/geometry/setRmin          0 cm
+/gate/absorber_layer1/geometry/setRmax          0.70 cm
+/gate/absorber_layer1/geometry/setHeight        0.20 cm
+/gate/absorber_layer1/placement/setTranslation  0.0 0.0 3.86215 cm
+/gate/absorber_layer1/vis/setColor              green
+/gate/absorber_layer1/vis/forceSolid
+
+/gate/ab_pri_ff/daughters/name                  absorber_layer2
+/gate/ab_pri_ff/daughters/insert                cylinder
+/gate/absorber_layer2/setMaterial               Aluminium
+/gate/absorber_layer2/geometry/setRmin          0 cm
+/gate/absorber_layer2/geometry/setRmax          0.80 cm
+/gate/absorber_layer2/geometry/setHeight        0.50 cm
+/gate/absorber_layer2/placement/setTranslation  0.0 0.0 3.51215 cm
+/gate/absorber_layer2/vis/setColor              green
+/gate/absorber_layer2/vis/forceSolid
+
+/gate/ab_pri_ff/daughters/name                  absorber_layer3
+/gate/ab_pri_ff/daughters/insert                cylinder
+/gate/absorber_layer3/setMaterial               Aluminium
+/gate/absorber_layer3/geometry/setRmin          0 cm
+/gate/absorber_layer3/geometry/setRmax          1.05 cm
+/gate/absorber_layer3/geometry/setHeight        0.50 cm
+/gate/absorber_layer3/placement/setTranslation  0.0 0.0 3.01215 cm
+/gate/absorber_layer3/vis/setColor              green
+/gate/absorber_layer3/vis/forceSolid
+
+

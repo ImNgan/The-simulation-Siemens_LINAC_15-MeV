@@ -1,0 +1,95 @@
+
+# -----------------------------------------------------
+# LINAC_HEAD
+# -----------------------------------------------------
+
+/gate/world/daughters/name           linac
+/gate/world/daughters/insert         box
+/gate/linac/setMaterial              Air
+/gate/linac/geometry/setXLength      0.6 m
+/gate/linac/geometry/setYLength      0.6 m
+/gate/linac/geometry/setZLength      1 m
+/gate/linac/placement/setTranslation 0 0 0 m
+/gate/linac/vis/setColor             yellow
+/gate/linac/vis/setVisible           0
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# VACUUM ENVELOPE ASSEMBLY
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_envelope.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# TUNGSTEN TARGET
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_target.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# MOTHER: ABSORBER 15MV,PRIMARY COLLIMATOR, FLATTENING FILTER 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/linac/daughters/name                ab_pri_ff
+/gate/linac/daughters/insert              cylinder
+/gate/ab_pri_ff/setMaterial               Air
+/gate/ab_pri_ff/geometry/setRmin          0 cm
+/gate/ab_pri_ff/geometry/setRmax          2.77622 cm
+/gate/ab_pri_ff/geometry/setHeight        7.9243 cm
+/gate/ab_pri_ff/placement/setTranslation  0 0 -5.66215 cm
+/gate/ab_pri_ff/vis/setVisible            0
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# ABSORBER 15MV
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_absorber_15MV.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# PRIMARY COLLIMATOR
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_primary_collimator_15MV.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# FLATTENING FILTER 
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_flattening_filter_15MV.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# X-RAY DOSE CHAMBER
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_xray_dose_chamber.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# MIRROR ASSEMBLY
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_mirror.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# SECONDARY COLLIMATOR
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/control/execute mac/linac_secondary_collimator.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# RETICLE TRAY
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#/control/execute mac/linac_reticle_tray.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# SHIELDING
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#/control/execute mac/linac_shielding.mac
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Updating the geometry
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/geometry/rebuild
+
+

@@ -1,0 +1,64 @@
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# X-RAY DOSE CHAMBER
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/linac/daughters/name                        xray_dose_chamber
+/gate/linac/daughters/insert                      cylinder
+/gate/xray_dose_chamber/setMaterial               Air
+/gate/xray_dose_chamber/geometry/setRmin          0 cm
+/gate/xray_dose_chamber/geometry/setRmax          5 cm
+/gate/xray_dose_chamber/geometry/setHeight        0.824 cm
+/gate/xray_dose_chamber/placement/setTranslation  0.0 0.0 -10.322 cm
+/gate/xray_dose_chamber/vis/setVisible            0
+
+	/gate/xray_dose_chamber/daughters/name                   xray_dose_chamber_layer1
+	/gate/xray_dose_chamber/daughters/insert                 cylinder
+	/gate/xray_dose_chamber_layer1/setMaterial               Ceramic
+	/gate/xray_dose_chamber_layer1/geometry/setRmin          0 cm
+	/gate/xray_dose_chamber_layer1/geometry/setRmax          5 cm
+	/gate/xray_dose_chamber_layer1/geometry/setHeight        0.152 cm
+	/gate/xray_dose_chamber_layer1/placement/setTranslation  0.0 0.0 0.336 cm
+	/gate/xray_dose_chamber_layer1/vis/setColor              gray
+	/gate/xray_dose_chamber_layer1/vis/forceSolid
+
+	/gate/xray_dose_chamber/daughters/name                   xray_dose_chamber_layer2
+	/gate/xray_dose_chamber/daughters/insert                 cylinder
+	/gate/xray_dose_chamber_layer2/setMaterial               Nitrogen
+	/gate/xray_dose_chamber_layer2/geometry/setRmin          0 cm
+	/gate/xray_dose_chamber_layer2/geometry/setRmax          5 cm
+	/gate/xray_dose_chamber_layer2/geometry/setHeight        0.184 cm
+	/gate/xray_dose_chamber_layer2/placement/setTranslation  0.0 0.0 0.168 cm
+	/gate/xray_dose_chamber_layer2/vis/setColor              red
+	/gate/xray_dose_chamber_layer2/vis/forceSolid
+
+	/gate/xray_dose_chamber/daughters/name                   xray_dose_chamber_layer3
+	/gate/xray_dose_chamber/daughters/insert                 cylinder
+	/gate/xray_dose_chamber_layer3/setMaterial               Ceramic
+	/gate/xray_dose_chamber_layer3/geometry/setRmin          0 cm
+	/gate/xray_dose_chamber_layer3/geometry/setRmax          5 cm
+	/gate/xray_dose_chamber_layer3/geometry/setHeight        0.152 cm
+	/gate/xray_dose_chamber_layer3/placement/setTranslation  0.0 0.0 0.0 cm
+	/gate/xray_dose_chamber_layer3/vis/setColor              gray
+	/gate/xray_dose_chamber_layer3/vis/forceSolid
+
+	/gate/xray_dose_chamber/daughters/name                   xray_dose_chamber_layer4
+	/gate/xray_dose_chamber/daughters/insert                 cylinder
+	/gate/xray_dose_chamber_layer4/setMaterial               Nitrogen
+	/gate/xray_dose_chamber_layer4/geometry/setRmin          0 cm
+	/gate/xray_dose_chamber_layer4/geometry/setRmax          5 cm
+	/gate/xray_dose_chamber_layer4/geometry/setHeight        0.184 cm
+	/gate/xray_dose_chamber_layer4/placement/setTranslation  0.0 0.0 -0.168 cm
+	/gate/xray_dose_chamber_layer4/vis/setColor              red
+	/gate/xray_dose_chamber_layer4/vis/forceSolid
+
+	/gate/xray_dose_chamber/daughters/name                   xray_dose_chamber_layer5
+	/gate/xray_dose_chamber/daughters/insert                 cylinder
+	/gate/xray_dose_chamber_layer5/setMaterial               Ceramic
+	/gate/xray_dose_chamber_layer5/geometry/setRmin          0 cm
+	/gate/xray_dose_chamber_layer5/geometry/setRmax          5 cm
+	/gate/xray_dose_chamber_layer5/geometry/setHeight        0.152 cm
+	/gate/xray_dose_chamber_layer5/placement/setTranslation  0.0 0.0 -0.336 cm
+	/gate/xray_dose_chamber_layer5/vis/setColor              gray
+	/gate/xray_dose_chamber_layer5/vis/forceSolid
+

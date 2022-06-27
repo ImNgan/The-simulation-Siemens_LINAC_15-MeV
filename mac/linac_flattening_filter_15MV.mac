@@ -1,0 +1,372 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# FLATTENING FILTER 15MV
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/ab_pri_ff/daughters/name    ff_cone2
+/gate/ab_pri_ff/daughters/insert  cone
+/gate/ff_cone2/setMaterial                StainlessSteel
+/gate/ff_cone2/geometry/setRmin2          0 cm
+/gate/ff_cone2/geometry/setRmax2          0.14478000004977 cm
+/gate/ff_cone2/geometry/setRmin1          0 cm
+/gate/ff_cone2/geometry/setRmax1          0.14478 cm
+/gate/ff_cone2/geometry/setHeight         0.0762 cm
+/gate/ff_cone2/placement/setTranslation   0.0 0.0 0.876650000 cm
+/gate/ff_cone2/vis/setColor               magenta
+#/gate/ff_cone2/vis/forceSolid
+
+	/gate/ff_cone2/daughters/name             ff_cone1
+	/gate/ff_cone2/daughters/insert           cone
+	/gate/ff_cone1/setMaterial                Air
+	/gate/ff_cone1/geometry/setRmin2          0 cm
+	/gate/ff_cone1/geometry/setRmax2          0.0482599999933158 cm
+	/gate/ff_cone1/geometry/setRmin1          0 cm
+	/gate/ff_cone1/geometry/setRmax1          0.09652 cm
+	/gate/ff_cone1/geometry/setHeight         0.0762 cm
+	/gate/ff_cone1/placement/setRotationAxis  1 0 0
+	/gate/ff_cone1/placement/setRotationAngle 180 deg
+	/gate/ff_cone1/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name            ff_cone3
+/gate/ab_pri_ff/daughters/insert          cone
+/gate/ff_cone3/setMaterial                StainlessSteel
+/gate/ff_cone3/geometry/setRmin2          0 cm
+/gate/ff_cone3/geometry/setRmax2          0.161470000006914 cm
+/gate/ff_cone3/geometry/setRmin1          0 cm
+/gate/ff_cone3/geometry/setRmax1          0.2032 cm
+/gate/ff_cone3/geometry/setHeight         0.1905 cm
+/gate/ff_cone3/placement/setTranslation   0.0 0.0 0.743300000 cm
+/gate/ff_cone3/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name            ff_cone4
+/gate/ab_pri_ff/daughters/insert          cone
+/gate/ff_cone4/setMaterial                StainlessSteel
+/gate/ff_cone4/geometry/setRmin2          0 cm
+/gate/ff_cone4/geometry/setRmax2          0.203200000033873 cm
+/gate/ff_cone4/geometry/setRmin1          0 cm
+/gate/ff_cone4/geometry/setRmax1          0.28076 cm
+/gate/ff_cone4/geometry/setHeight         0.26210 cm
+/gate/ff_cone4/placement/setTranslation   0.0 0.0 0.517000000 cm
+/gate/ff_cone4/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name            ff_cone5
+/gate/ab_pri_ff/daughters/insert          cone
+/gate/ff_cone5/setMaterial                StainlessSteel
+/gate/ff_cone5/geometry/setRmin2          0 cm
+/gate/ff_cone5/geometry/setRmax2          0.280760000051456 cm
+/gate/ff_cone5/geometry/setRmin1          0 cm
+/gate/ff_cone5/geometry/setRmax1          0.66548 cm
+/gate/ff_cone5/geometry/setHeight         1.3 cm
+/gate/ff_cone5/placement/setTranslation   0.0 0.0 -0.264050000 cm
+/gate/ff_cone5/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name            ff_cone6
+/gate/ab_pri_ff/daughters/insert          cone
+/gate/ff_cone6/setMaterial                StainlessSteel
+/gate/ff_cone6/geometry/setRmin2          0 cm
+/gate/ff_cone6/geometry/setRmax2          0.665480000241697 cm
+/gate/ff_cone6/geometry/setRmin1          0 cm
+/gate/ff_cone6/geometry/setRmax1          0.93218 cm
+/gate/ff_cone6/geometry/setHeight         0.83566 cm
+/gate/ff_cone6/placement/setTranslation   0.0 0.0 -1.331880000 cm
+/gate/ff_cone6/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name            ff_cone7
+/gate/ab_pri_ff/daughters/insert          cone
+/gate/ff_cone7/setMaterial                StainlessSteel
+/gate/ff_cone7/geometry/setRmin2          0 cm
+/gate/ff_cone7/geometry/setRmax2          0.932180000130652 cm
+/gate/ff_cone7/geometry/setRmin1          0 cm
+/gate/ff_cone7/geometry/setRmax1          1.1215 cm
+/gate/ff_cone7/geometry/setHeight         0.56434 cm
+/gate/ff_cone7/placement/setTranslation   0.0 0.0 -2.031880000 cm
+/gate/ff_cone7/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name            ff_cone8
+/gate/ab_pri_ff/daughters/insert          cone
+/gate/ff_cone8/setMaterial                StainlessSteel
+/gate/ff_cone8/geometry/setRmin2          0 cm
+/gate/ff_cone8/geometry/setRmax2          1.12146900024071 cm
+/gate/ff_cone8/geometry/setRmin1          0 cm
+/gate/ff_cone8/geometry/setRmax1          1.34112 cm
+/gate/ff_cone8/geometry/setHeight         0.65486 cm
+/gate/ff_cone8/placement/setTranslation   0.0 0.0 -2.641480000 cm
+/gate/ff_cone8/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name            ff_cone9
+/gate/ab_pri_ff/daughters/insert          cone
+/gate/ff_cone9/setMaterial                StainlessSteel
+/gate/ff_cone9/geometry/setRmin2          0 cm
+/gate/ff_cone9/geometry/setRmax2          1.34111999998005 cm
+/gate/ff_cone9/geometry/setRmin1          0 cm
+/gate/ff_cone9/geometry/setRmax1          1.412336 cm
+/gate/ff_cone9/geometry/setHeight         0.1219 cm
+/gate/ff_cone9/placement/setTranslation   0.0 0.0 -3.029860000 cm
+/gate/ff_cone9/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name                     ff_cone10_outside
+/gate/ab_pri_ff/daughters/insert                   cone
+/gate/ff_cone10_outside/setMaterial                StainlessSteel
+/gate/ff_cone10_outside/geometry/setRmin2          0.652999999442174 cm
+/gate/ff_cone10_outside/geometry/setRmax2          1.41236599999425 cm
+/gate/ff_cone10_outside/geometry/setRmin1          0.940547 cm
+/gate/ff_cone10_outside/geometry/setRmax1          1.487593 cm
+/gate/ff_cone10_outside/geometry/setHeight         0.1598 cm
+/gate/ff_cone10_outside/placement/setTranslation   0.0 0.0 -3.170710000 cm
+/gate/ff_cone10_outside/vis/setColor               magenta
+
+	/gate/ff_cone10_outside/daughters/name            ff_cone10_inside
+	/gate/ff_cone10_outside/daughters/insert          cone
+	/gate/ff_cone10_inside/setMaterial                StainlessSteel
+	/gate/ff_cone10_inside/geometry/setRmin2          0 cm
+	/gate/ff_cone10_inside/geometry/setRmax2          0.365012999215842 cm
+	/gate/ff_cone10_inside/geometry/setRmin1          0 cm
+	/gate/ff_cone10_inside/geometry/setRmax1          0.65 cm
+	/gate/ff_cone10_inside/geometry/setHeight         0.1598 cm
+	/gate/ff_cone10_inside/placement/setRotationAxis  1 0 0
+	/gate/ff_cone10_inside/placement/setRotationAngle 180 deg
+	/gate/ff_cone10_inside/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name                     ff_cone11_outside
+/gate/ab_pri_ff/daughters/insert                   cone
+/gate/ff_cone11_outside/setMaterial                StainlessSteel
+/gate/ff_cone11_outside/geometry/setRmin2          0.940546999899314 cm
+/gate/ff_cone11_outside/geometry/setRmax2          1.48759300005624 cm
+/gate/ff_cone11_outside/geometry/setRmin1          1.18364 cm
+/gate/ff_cone11_outside/geometry/setRmax1          1.638025 cm
+/gate/ff_cone11_outside/geometry/setHeight         0.2264 cm
+/gate/ff_cone11_outside/placement/setTranslation   0.0 0.0 -3.363810000 cm
+/gate/ff_cone11_outside/vis/setColor               magenta
+
+	/gate/ff_cone11_outside/daughters/name            ff_cone11_inside
+	/gate/ff_cone11_outside/daughters/insert          cone
+	/gate/ff_cone11_inside/setMaterial                StainlessSteel
+	/gate/ff_cone11_inside/geometry/setRmin2          0 cm
+	/gate/ff_cone11_inside/geometry/setRmax2          0.242569999849346 cm
+	/gate/ff_cone11_inside/geometry/setRmin1          0 cm
+	/gate/ff_cone11_inside/geometry/setRmax1          0.365013 cm
+	/gate/ff_cone11_inside/geometry/setHeight         0.2264 cm
+	/gate/ff_cone11_inside/placement/setRotationAxis  1 0 0
+	/gate/ff_cone11_inside/placement/setRotationAngle 180 deg
+	/gate/ff_cone11_inside/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name                     ff_cone12_outside
+/gate/ab_pri_ff/daughters/insert                   cone
+/gate/ff_cone12_outside/setMaterial                StainlessSteel
+/gate/ff_cone12_outside/geometry/setRmin2          1.18363999985121 cm
+/gate/ff_cone12_outside/geometry/setRmax2          1.63802500031763 cm
+/gate/ff_cone12_outside/geometry/setRmin1          1.312333 cm
+/gate/ff_cone12_outside/geometry/setRmax1          1.728582 cm
+/gate/ff_cone12_outside/geometry/setHeight         0.15494 cm
+/gate/ff_cone12_outside/placement/setTranslation   0.0 0.0 -3.554480000 cm
+/gate/ff_cone12_outside/vis/setColor               magenta
+
+	/gate/ff_cone12_outside/daughters/name            ff_cone12_inside
+	/gate/ff_cone12_outside/daughters/insert          cone
+	/gate/ff_cone12_inside/setMaterial                StainlessSteel
+	/gate/ff_cone12_inside/geometry/setRmin2          0 cm
+	/gate/ff_cone12_inside/geometry/setRmax2          0.2158999999042760 cm
+	/gate/ff_cone12_inside/geometry/setRmin1          0 cm
+	/gate/ff_cone12_inside/geometry/setRmax1          0.24257 cm
+	/gate/ff_cone12_inside/geometry/setHeight         0.15494 cm
+	/gate/ff_cone12_inside/placement/setRotationAxis  1 0 0
+	/gate/ff_cone12_inside/placement/setRotationAngle 180 deg
+	/gate/ff_cone12_inside/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name                     ff_cone13_outside
+/gate/ab_pri_ff/daughters/insert                   cone
+/gate/ff_cone13_outside/setMaterial                StainlessSteel
+/gate/ff_cone13_outside/geometry/setRmin2          1.3123329999715 cm
+/gate/ff_cone13_outside/geometry/setRmax2          1.7285820001339 cm
+/gate/ff_cone13_outside/geometry/setRmin1          1.344507 cm
+/gate/ff_cone13_outside/geometry/setRmax1          1.78054 cm
+/gate/ff_cone13_outside/geometry/setHeight         0.0889 cm
+/gate/ff_cone13_outside/placement/setTranslation   0.0 0.0 -3.676400005 cm
+	/gate/ff_cone13_outside/vis/setColor               magenta
+
+	/gate/ff_cone13_outside/daughters/name            ff_cone13_inside
+	/gate/ff_cone13_outside/daughters/insert          cone
+	/gate/ff_cone13_inside/setMaterial                StainlessSteel
+	/gate/ff_cone13_inside/geometry/setRmin2          0 cm
+	/gate/ff_cone13_inside/geometry/setRmax2          0.186511996879107 cm
+	/gate/ff_cone13_inside/geometry/setRmin1          0 cm
+	/gate/ff_cone13_inside/geometry/setRmax1          0.2159 cm
+	/gate/ff_cone13_inside/geometry/setHeight         0.0889 cm
+	/gate/ff_cone13_inside/placement/setRotationAxis  1 0 0
+	/gate/ff_cone13_inside/placement/setRotationAngle 180 deg
+	/gate/ff_cone13_inside/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name                     ff_cone14_outside
+/gate/ab_pri_ff/daughters/insert                   cone
+/gate/ff_cone14_outside/setMaterial                StainlessSteel
+/gate/ff_cone14_outside/geometry/setRmin2          0 cm
+/gate/ff_cone14_outside/geometry/setRmax2          2.53873 cm
+/gate/ff_cone14_outside/geometry/setRmin1          0 cm
+/gate/ff_cone14_outside/geometry/setRmax1          2.54 cm
+/gate/ff_cone14_outside/geometry/setHeight         0.0635 cm
+/gate/ff_cone14_outside/placement/setTranslation   0.0 0.0 -3.752600005 cm
+/gate/ff_cone14_outside/placement/setRotationAxis  1 0 0
+/gate/ff_cone14_outside/placement/setRotationAngle 180 deg
+/gate/ff_cone14_outside/vis/setColor               magenta
+
+	/gate/ff_cone14_outside/daughters/name            ff_cone14_middle
+	/gate/ff_cone14_outside/daughters/insert          cone
+	/gate/ff_cone14_middle/setMaterial                Air
+	/gate/ff_cone14_middle/geometry/setRmin2          0 cm
+	/gate/ff_cone14_middle/geometry/setRmax2          1.34450700495156 cm
+	/gate/ff_cone14_middle/geometry/setRmin1          0 cm
+	/gate/ff_cone14_middle/geometry/setRmax1          1.37668 cm
+	/gate/ff_cone14_middle/geometry/setHeight         0.0635 cm
+	/gate/ff_cone14_middle/placement/setRotationAxis  1 0 0
+	/gate/ff_cone14_middle/placement/setRotationAngle 180 deg
+	/gate/ff_cone14_middle/vis/setColor               magenta
+
+		/gate/ff_cone14_middle/daughters/name             ff_cone14_inside
+		/gate/ff_cone14_middle/daughters/insert           cone
+		/gate/ff_cone14_inside/setMaterial                StainlessSteel
+		/gate/ff_cone14_inside/geometry/setRmin2          0 cm
+		/gate/ff_cone14_inside/geometry/setRmax2          0.165528299896613 cm
+		/gate/ff_cone14_inside/geometry/setRmin1          0 cm
+		/gate/ff_cone14_inside/geometry/setRmax1          0.186512 cm
+		/gate/ff_cone14_inside/geometry/setHeight         0.0635 cm
+		/gate/ff_cone14_inside/placement/setRotationAxis  1 0 0
+		/gate/ff_cone14_inside/placement/setRotationAngle 180 deg
+		/gate/ff_cone14_inside/vis/setColor               magenta
+
+	
+/gate/ab_pri_ff/daughters/name                         ff_cylinder15_outside
+/gate/ab_pri_ff/daughters/insert                       cylinder
+/gate/ff_cylinder15_outside/setMaterial                StainlessSteel
+/gate/ff_cylinder15_outside/geometry/setRmin           0 cm
+/gate/ff_cylinder15_outside/geometry/setRmax           2.54 cm
+/gate/ff_cylinder15_outside/geometry/setHeight         0.10160 cm
+/gate/ff_cylinder15_outside/placement/setTranslation   0.0 0.0 -3.835150000 cm
+/gate/ff_cylinder15_outside/vis/setColor               magenta
+
+	/gate/ff_cylinder15_outside/daughters/name        ff_cone15_middle
+	/gate/ff_cylinder15_outside/daughters/insert      cone
+	/gate/ff_cone15_middle/setMaterial                Air
+	/gate/ff_cone15_middle/geometry/setRmin2          0 cm
+	/gate/ff_cone15_middle/geometry/setRmax2          1.37667999999 cm
+	/gate/ff_cone15_middle/geometry/setRmin1          0 cm
+	/gate/ff_cone15_middle/geometry/setRmax1          1.428496 cm
+	/gate/ff_cone15_middle/geometry/setHeight         0.1016 cm
+	/gate/ff_cone15_middle/vis/setColor               magenta
+
+		/gate/ff_cone15_middle/daughters/name             ff_cone15_inside
+		/gate/ff_cone15_middle/daughters/insert           cone
+		/gate/ff_cone15_inside/setMaterial                StainlessSteel
+		/gate/ff_cone15_inside/geometry/setRmin2          0 cm
+		/gate/ff_cone15_inside/geometry/setRmax2          0.131941000179291 cm
+		/gate/ff_cone15_inside/geometry/setRmin1          0 cm
+		/gate/ff_cone15_inside/geometry/setRmax1          0.1655283 cm
+		/gate/ff_cone15_inside/geometry/setHeight         0.1016 cm
+		/gate/ff_cone15_inside/placement/setRotationAxis  1 0 0
+		/gate/ff_cone15_inside/placement/setRotationAngle 180 deg
+		/gate/ff_cone15_inside/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name                               ff_cylinder16_outside_Steel
+/gate/ab_pri_ff/daughters/insert                             cylinder
+/gate/ff_cylinder16_outside_Steel/setMaterial                StainlessSteel
+/gate/ff_cylinder16_outside_Steel/geometry/setRmin           0 cm
+/gate/ff_cylinder16_outside_Steel/geometry/setRmax           2.54 cm
+/gate/ff_cylinder16_outside_Steel/geometry/setHeight         0.05334 cm
+/gate/ff_cylinder16_outside_Steel/placement/setTranslation   0.0 0.0 -3.912620000 cm
+/gate/ff_cylinder16_outside_Steel/vis/setColor               magenta
+
+	/gate/ff_cylinder16_outside_Steel/daughters/name       ff_cone16_outside_Air
+	/gate/ff_cylinder16_outside_Steel/daughters/insert     cone
+	/gate/ff_cone16_outside_Air/setMaterial                Air
+	/gate/ff_cone16_outside_Air/geometry/setRmin2          0 cm
+	/gate/ff_cone16_outside_Air/geometry/setRmax2          2.14626999660422 cm
+	/gate/ff_cone16_outside_Air/geometry/setRmin1          0 cm
+	/gate/ff_cone16_outside_Air/geometry/setRmax1          2.166717 cm
+	/gate/ff_cone16_outside_Air/geometry/setHeight         0.05334 cm
+	/gate/ff_cone16_outside_Air/vis/setColor               magenta
+
+
+		/gate/ff_cone16_outside_Air/daughters/name              ff_cone16_middle_Steel
+		/gate/ff_cone16_outside_Air/daughters/insert            cone
+		/gate/ff_cone16_middle_Steel/setMaterial                StainlessSteel
+		/gate/ff_cone16_middle_Steel/geometry/setRmin2          0 cm
+		/gate/ff_cone16_middle_Steel/geometry/setRmax2          1.90957199850815 cm
+		/gate/ff_cone16_middle_Steel/geometry/setRmin1          0 cm
+		/gate/ff_cone16_middle_Steel/geometry/setRmax1          1.93802 cm
+		/gate/ff_cone16_middle_Steel/geometry/setHeight         0.05334 cm
+		/gate/ff_cone16_middle_Steel/placement/setRotationAxis  1 0 0
+		/gate/ff_cone16_middle_Steel/placement/setRotationAngle 180 deg
+		/gate/ff_cone16_middle_Steel/vis/setColor               magenta
+
+			/gate/ff_cone16_middle_Steel/daughters/name           ff_cone16_middle_Air
+			/gate/ff_cone16_middle_Steel/daughters/insert         cone
+			/gate/ff_cone16_middle_Air/setMaterial                Air
+			/gate/ff_cone16_middle_Air/geometry/setRmin2          0 cm
+			/gate/ff_cone16_middle_Air/geometry/setRmax2          1.42849599983865 cm
+			/gate/ff_cone16_middle_Air/geometry/setRmin1          0 cm
+			/gate/ff_cone16_middle_Air/geometry/setRmax1          1.455699 cm
+			/gate/ff_cone16_middle_Air/geometry/setHeight         0.05334 cm
+			/gate/ff_cone16_middle_Air/placement/setRotationAxis  1 0 0
+			/gate/ff_cone16_middle_Air/placement/setRotationAngle 180 deg
+			/gate/ff_cone16_middle_Air/vis/setColor               magenta
+
+				/gate/ff_cone16_middle_Air/daughters/name             ff_cone16_inside_Steel
+				/gate/ff_cone16_middle_Air/daughters/insert           cone
+				/gate/ff_cone16_inside_Steel/setMaterial                StainlessSteel
+				/gate/ff_cone16_inside_Steel/geometry/setRmin2          0 cm
+				/gate/ff_cone16_inside_Steel/geometry/setRmax2          0.114300000115537 cm
+				/gate/ff_cone16_inside_Steel/geometry/setRmin1          0 cm
+				/gate/ff_cone16_inside_Steel/geometry/setRmax1          0.131941 cm
+				/gate/ff_cone16_inside_Steel/geometry/setHeight         0.05334 cm
+				/gate/ff_cone16_inside_Steel/placement/setRotationAxis  1 0 0
+				/gate/ff_cone16_inside_Steel/placement/setRotationAngle 180 deg
+				/gate/ff_cone16_inside_Steel/vis/setColor               magenta
+
+/gate/ab_pri_ff/daughters/name                           ff_cone17_outside_Steel
+/gate/ab_pri_ff/daughters/insert                         cone
+/gate/ff_cone17_outside_Steel/setMaterial                StainlessSteel
+/gate/ff_cone17_outside_Steel/geometry/setRmin2          0 cm
+/gate/ff_cone17_outside_Steel/geometry/setRmax2          2.53872576031736 cm
+/gate/ff_cone17_outside_Steel/geometry/setRmin1          0 cm
+/gate/ff_cone17_outside_Steel/geometry/setRmax1          2.5399958 cm
+/gate/ff_cone17_outside_Steel/geometry/setHeight         0.09906 cm
+/gate/ff_cone17_outside_Steel/placement/setTranslation    0 0 -3.988820000 cm
+/gate/ff_cone17_outside_Steel/placement/setRotationAxis   1 0 0
+/gate/ff_cone17_outside_Steel/placement/setRotationAngle  180 deg
+/gate/ff_cone17_outside_Steel/vis/setColor               magenta
+/gate/geometry/rebuild
+	
+	/gate/ff_cone17_outside_Steel/daughters/name           ff_cone17_outside_Air
+	/gate/ff_cone17_outside_Steel/daughters/insert         cone
+	/gate/ff_cone17_outside_Air/setMaterial                Air
+	/gate/ff_cone17_outside_Air/geometry/setRmin2          0 cm
+	/gate/ff_cone17_outside_Air/geometry/setRmax2          2.15912699959695 cm
+	/gate/ff_cone17_outside_Air/geometry/setRmin1          0 cm
+	/gate/ff_cone17_outside_Air/geometry/setRmax1          2.19710 cm
+	/gate/ff_cone17_outside_Air/geometry/setHeight         0.09906 cm
+	/gate/ff_cone17_outside_Air/placement/setRotationAxis   1 0 0
+	/gate/ff_cone17_outside_Air/placement/setRotationAngle  180 deg
+	/gate/ff_cone17_outside_Air/vis/setColor               magenta
+
+		/gate/ff_cone17_outside_Air/daughters/name              ff_cone17_inside_Steel
+		/gate/ff_cone17_outside_Air/daughters/insert            cone
+		/gate/ff_cone17_inside_Steel/setMaterial                StainlessSteel
+		/gate/ff_cone17_inside_Steel/geometry/setRmin2          0 cm
+		/gate/ff_cone17_inside_Steel/geometry/setRmax2          1.8567399998875800 cm
+		/gate/ff_cone17_inside_Steel/geometry/setRmin1          0 cm
+		/gate/ff_cone17_inside_Steel/geometry/setRmax1          1.9095720 cm
+		/gate/ff_cone17_inside_Steel/geometry/setHeight         0.09906 cm
+		/gate/ff_cone17_inside_Steel/placement/setRotationAxis   1 0 0
+		/gate/ff_cone17_inside_Steel/placement/setRotationAngle  180 deg
+		/gate/ff_cone17_inside_Steel/vis/setColor               magenta
+
+			/gate/ff_cone17_inside_Steel/daughters/name           ff_cone17_inside_Air
+			/gate/ff_cone17_inside_Steel/daughters/insert         cone
+			/gate/ff_cone17_inside_Air/setMaterial                StainlessSteel
+			/gate/ff_cone17_inside_Air/geometry/setRmin2          0 cm
+			/gate/ff_cone17_inside_Air/geometry/setRmax2          1.4556990001609 cm
+			/gate/ff_cone17_inside_Air/geometry/setRmin1          0 cm
+			/gate/ff_cone17_inside_Air/geometry/setRmax1          1.5062 cm
+			/gate/ff_cone17_inside_Air/geometry/setHeight         0.09906 cm
+			/gate/ff_cone17_inside_Air/placement/setRotationAxis   1 0 0
+			/gate/ff_cone17_inside_Air/placement/setRotationAngle  180 deg
+			/gate/ff_cone17_inside_Air/vis/setColor               magenta
+				

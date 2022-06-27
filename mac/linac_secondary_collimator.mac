@@ -1,0 +1,80 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# SECONDARY COLLIMATOR LOWER
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/linac/daughters/name                           secondary_collimator_lower
+/gate/linac/daughters/insert                         box
+/gate/secondary_collimator_lower/setMaterial               Air
+/gate/secondary_collimator_lower/geometry/setXLength       20 cm  
+/gate/secondary_collimator_lower/geometry/setYLength       20 cm
+/gate/secondary_collimator_lower/geometry/setZLength       7.62 cm	 
+/gate/secondary_collimator_lower/placement/setTranslation  0 0 -34.188 cm   # -30.378 - 7.62/2
+/gate/secondary_collimator_lower/vis/setVisible            0
+
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# JAW_X: Lower jaws
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	/gate/secondary_collimator_lower/daughters/name    jaw_x
+	/gate/secondary_collimator_lower/daughters/insert  wedge
+	/gate/jaw_x/setMaterial                            Tungsten
+	/gate/jaw_x/geometry/setXLength                    8.4811 cm
+	/gate/jaw_x/geometry/setNarrowerXLength            8.1001 cm
+	/gate/jaw_x/geometry/setYLength                    7.62 cm
+	/gate/jaw_x/geometry/setZLength                    20 cm
+	/gate/jaw_x/placement/setTranslation               -5.75945 0 0 cm # -YLength(box)/2 - XLength(wedge)/2
+	/gate/jaw_x/placement/setRotationAxis              1 0 0
+	/gate/jaw_x/placement/setRotationAngle             270 deg
+	/gate/jaw_x/vis/setColor                           yellow
+	/gate/jaw_x/vis/forceSolid
+
+	#Repeater: ring
+	/gate/jaw_x/repeaters/insert      ring
+	/gate/jaw_x/ring/setRepeatNumber  2
+	/gate/jaw_x/ring/setPoint1 0 1 0
+	/gate/jaw_x/ring/setPoint2 0 0 0
+	/gate/jaw_x/ring/enableAutoRotation
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# SECONDARY COLLIMATOR UPPER
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/gate/linac/daughters/name                                 secondary_collimator_upper
+/gate/linac/daughters/insert                               box
+/gate/secondary_collimator_upper/setMaterial               Air
+/gate/secondary_collimator_upper/geometry/setXLength       20 cm  
+/gate/secondary_collimator_upper/geometry/setYLength       20 cm
+/gate/secondary_collimator_upper/geometry/setZLength       7.62 cm	 
+/gate/secondary_collimator_upper/placement/setTranslation  0 0 -26.391 cm # -22.581 - 7.62/2
+/gate/secondary_collimator_upper/vis/setVisible            0
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# JAW_Y: Upper jaws
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	/gate/secondary_collimator_upper/daughters/name    jaw_y
+	/gate/secondary_collimator_upper/daughters/insert  box
+	/gate/jaw_y/setMaterial                            Air
+	/gate/jaw_y/geometry/setXLength                    7.62 cm  
+	/gate/jaw_y/geometry/setYLength                    8.87095 cm
+	/gate/jaw_y/geometry/setZLength                    20 cm	 
+	/gate/jaw_y/placement/setTranslation               0 -5.564525 0 cm # -YLength(box)/2 - XLength(wedge)/2
+	/gate/jaw_y/placement/setRotationAxis              0 1 0
+	/gate/jaw_y/placement/setRotationAngle             270 deg
+	/gate/jaw_y/vis/setVisible                         0
+
+		/gate/jaw_y/daughters/name                 jaw_ybis
+		/gate/jaw_y/daughters/insert               wedge
+		/gate/jaw_ybis/setMaterial                 Tungsten
+		/gate/jaw_ybis/geometry/setXLength         8.87095 cm
+		/gate/jaw_ybis/geometry/setNarrowerXLength 8.48995 cm
+		/gate/jaw_ybis/geometry/setYLength         7.62 cm
+		/gate/jaw_ybis/geometry/setZLength         20 cm
+		/gate/jaw_ybis/placement/setRotationAxis   0 0 1
+		/gate/jaw_ybis/placement/setRotationAngle  90 deg
+		/gate/jaw_ybis/vis/setColor                yellow
+		/gate/jaw_ybis/vis/forceSolid
+
+
+	#Repeater: ring
+	/gate/jaw_y/repeaters/insert      ring
+	/gate/jaw_y/ring/setRepeatNumber  2
+	/gate/jaw_y/ring/setPoint1 1 0 0
+	/gate/jaw_y/ring/setPoint2 0 0 0
+	/gate/jaw_y/ring/enableAutoRotation
+

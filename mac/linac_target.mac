@@ -1,0 +1,93 @@
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# TARGET
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+/gate/linac/daughters/name             target
+/gate/linac/daughters/insert           cylinder
+/gate/target/setMaterial               Air
+/gate/target/geometry/setRmin          0 cm  
+/gate/target/geometry/setRmax          1.4 cm
+/gate/target/geometry/setHeight        1.483 cm	 
+/gate/target/placement/setTranslation  0.0 0.0 -0.7415 cm
+/gate/target/vis/setVisible 0
+
+	/gate/target/daughters/name                   target_layer1
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer1/setMaterial               Air
+	/gate/target_layer1/geometry/setRmin          0 cm
+	/gate/target_layer1/geometry/setRmax          1.4 cm
+	/gate/target_layer1/geometry/setHeight        0.1120 cm
+	/gate/target_layer1/placement/setTranslation  0.0 0.0 0.6855 cm
+	/gate/target_layer1/vis/setColor              white
+	/gate/target_layer1/vis/forceSolid
+
+	/gate/target/daughters/name                   target_layer2
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer2/setMaterial               Tungsten
+	/gate/target_layer2/geometry/setRmin          0 cm
+	/gate/target_layer2/geometry/setRmax          1.2 cm
+	/gate/target_layer2/geometry/setHeight        0.0640 cm
+	/gate/target_layer2/placement/setTranslation  0.0 0.0 0.5975 cm
+	/gate/target_layer2/vis/setColor              yellow
+	/gate/target_layer2/vis/forceSolid
+
+	/gate/target/daughters/name                   target_layer3
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer3/setMaterial               Nicoro
+	/gate/target_layer3/geometry/setRmin          0 cm
+	/gate/target_layer3/geometry/setRmax          1.0 cm
+	/gate/target_layer3/geometry/setHeight        0.0150 cm
+	/gate/target_layer3/placement/setTranslation  0.0 0.0 0.5580 cm
+	/gate/target_layer3/vis/setColor              green
+	/gate/target_layer3/vis/forceSolid
+
+	/gate/target/daughters/name                   target_layer4
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer4/setMaterial               Copper
+	/gate/target_layer4/geometry/setRmin          0 cm
+	/gate/target_layer4/geometry/setRmax          0.8 cm
+	/gate/target_layer4/geometry/setHeight        0.1650 cm
+	/gate/target_layer4/placement/setTranslation  0.0 0.0 0.4680 cm
+	/gate/target_layer4/vis/setColor              gray
+	/gate/target_layer4/vis/forceSolid
+
+	/gate/target/daughters/name                   target_layer5
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer5/setMaterial               Nicoro
+	/gate/target_layer5/geometry/setRmin          0 cm
+	/gate/target_layer5/geometry/setRmax          0.6 cm
+	/gate/target_layer5/geometry/setHeight        0.0050 cm
+	/gate/target_layer5/placement/setTranslation  0.0 0.0 0.3830 cm
+	/gate/target_layer5/vis/setColor              green
+	/gate/target_layer5/vis/forceSolid
+
+	/gate/target/daughters/name                   target_layer6
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer6/setMaterial               StainlessSteel
+	/gate/target_layer6/geometry/setRmin          0 cm
+	/gate/target_layer6/geometry/setRmax          0.4 cm
+	/gate/target_layer6/geometry/setHeight        0.1020 cm
+	/gate/target_layer6/placement/setTranslation  0.0 0.0 0.3295 cm
+	/gate/target_layer6/vis/setColor              magenta
+	/gate/target_layer6/vis/forceSolid
+	
+	/gate/target/daughters/name                   target_layer7
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer7/setMaterial               Graphite
+	/gate/target_layer7/geometry/setRmin          0 cm
+	/gate/target_layer7/geometry/setRmax          0.1 cm
+	/gate/target_layer7/geometry/setHeight        1.0160 cm
+	/gate/target_layer7/placement/setTranslation  0.0 0.0 -0.2295 cm
+	/gate/target_layer7/vis/setColor              cyan
+	/gate/target_layer7/vis/forceSolid
+
+	/gate/target/daughters/name                   target_layer8
+	/gate/target/daughters/insert                 cylinder
+	/gate/target_layer8/setMaterial               StainlessSteel
+	/gate/target_layer8/geometry/setRmin          0 cm
+	/gate/target_layer8/geometry/setRmax          0.2 cm
+	/gate/target_layer8/geometry/setHeight        0.0040 cm
+	/gate/target_layer8/placement/setTranslation  0.0 0.0 -0.7395 cm
+	/gate/target_layer8/vis/setColor              magenta
+	/gate/target_layer8/vis/forceSolid
+
