@@ -28,15 +28,15 @@ for (Int_t i=0;i<120;i++){
 for (Int_t j=0;j<60;j++){
        mea[j]=PDD_mea[(j*2)+1];
        }
-for (Int_t k=0;k<50;k++){
+for (Int_t k=0;k<60;k++){
     x[k]=(k+1)*5;
     y[k]=((NL[k]-mea[59-k])/mea[59-k])*100;     
   
 }
 
-for (Int_t k=6;k<50;k++){
+for (Int_t k=0;k<60;k++){
     tong=tong+y[k];
-    TB=tong/44;  
+    TB=tong/60;  
 }
  cout<<TB<<endl;
 in.close();
