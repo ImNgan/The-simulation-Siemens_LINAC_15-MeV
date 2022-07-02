@@ -1,9 +1,9 @@
 # The-simulation-Siemens_LINAC_15-MeV
 This is the simulation of SIEMENS PRIMUS HPD linac head to research neutron production from a linear accelerator.
 ## The steps of simulation includes:
-1. Build the geometry of the Siemens linac head.
-2. Match the beam profile by comparing PDD and OCR in the simulation and in the experiment at Kien Giang General Hospital.
-3. Reasearch and determine the neutron produced from the linac in the simulation.
+1. Building the geometry of the Siemens linac head.
+2. Matching the beam profile by comparing PDD and OCR in the simulation and in the experiment at Kien Giang General Hospital.
+3. Reasearching and determining the neutron produced from the linac in the simulation.
 
 
 
@@ -20,7 +20,7 @@ This is the simulation of SIEMENS PRIMUS HPD linac head to research neutron prod
 
 
 ### The beam profile ###
-Run simulation to acquire dose at the phantom determining PDD and OCR curves.
+*Gaining dose at the phantom to determine PDD and OCR curves.*
 
 Method 1: main_Dose.mac record the entire of process electron source entering.
 
